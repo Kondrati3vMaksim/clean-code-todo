@@ -1,0 +1,19 @@
+import js from '@eslint/js';
+import globals from 'globals';
+import eslintConfigPrettier from 'eslint-config-prettier/flat';
+const lint = [
+  js.configs.recommended,
+  {
+    languageOptions: {
+      globals: globals.browser,
+    },
+    rules: {
+      'no-var': 'error',
+      'prefer-const': 'error',
+      'no-console': 'error',
+    },
+  },
+  eslintConfigPrettier,
+];
+
+export default lint;
