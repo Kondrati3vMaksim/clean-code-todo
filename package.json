@@ -6,9 +6,9 @@
   "lint-staged": {
     "*.js": [
       "eslint",
-      "prettier --write"
+      "prettier --check"
     ],
-    "*.{html,css,json,md}": "prettier --write"
+    "*.{html,css,json,md}": "prettier --check"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
